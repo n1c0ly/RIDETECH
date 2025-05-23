@@ -93,7 +93,7 @@ header article section {
 }
 
 main{
-    background-image: url(/imagens/main\ \(1\).svg);
+    background-image: url(src/image/main\ \(1\).svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -419,6 +419,17 @@ footer button {
 
 footer button:hover {
     background-color: #8ff0eb;
+}
+footer article nav div {
+    display: flex;
+    gap: 10px;
+}
+
+
+footer h5 {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
 @media (max-width: 890px) {
