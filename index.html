@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ridetech</title>
     <link rel="stylesheet" href="/styles.css">
+    <script src="main.js" defer></script>
 </head>
+
 <body>
     <!-- <header>
         <img style="display: flex; align-items: center;
@@ -36,7 +39,9 @@
             <a href="">FeedBack</a>
         </nav>
         <div>
-            <img src="src/image/perfil.svg" alt="user">
+            <a href="">
+                <img src="src/image/perfil.svg" alt="user">
+            </a>
             <!-- nav-mobile -->
             <article>
                 <section></section>
@@ -83,7 +88,10 @@
     <section class="sobre-nos">
         <article>
             <h2>Sobre Nós</h2>
-            <h6>Na RideTech, entendemos os desafios do dia a dia de um motoboy e estamos aqui para garantir sua segurança e bem-estar. Oferecemos seguros para motos e vida, além de kits essenciais como capacetes e capas de chuva. Nosso objetivo é trazer mais proteção e tranquilidade para quem vive nas estradas. Porque sua segurança é a nossa prioridade!</h6>
+            <h6>Na RideTech, entendemos os desafios do dia a dia de um motoboy e estamos aqui para garantir sua
+                segurança e bem-estar. Oferecemos seguros para motos e vida, além de kits essenciais como capacetes e
+                capas de chuva. Nosso objetivo é trazer mais proteção e tranquilidade para quem vive nas estradas.
+                Porque sua segurança é a nossa prioridade!</h6>
         </article>
         <img src="src/image/logo-grande.png" alt="">
     </section>
@@ -102,7 +110,7 @@
                     <h1>R$27</h1>
                     <p> / dia</p>
                 </div>
-                <button>Escolher Plano</button>
+                <button class="open-plan">Escolher Plano</button>
             </section>
             <section>
                 <h5>Plano</h5>
@@ -116,7 +124,7 @@
                     <h1>R$27</h1>
                     <p> / dia</p>
                 </div>
-                <button>Escolher Plano</button>
+                <button class="open-plan">Escolher Plano</button>
             </section>
             <section>
                 <h5>Plano</h5>
@@ -130,9 +138,24 @@
                     <h1>R$27</h1>
                     <p> / dia</p>
                 </div>
-                <button>Escolher Plano</button>
+                <button class="open-plan">Escolher Plano</button>
             </section>
         </article>
+        <section class="modal-plan" id="modal-plan">
+            <h5>Plano</h5>
+            <h3>Minha Motoquinha</h3>
+            <p>Você aluga a moto e no final poderá ser sua</p>
+            <ul>
+                <li>Plano com duração de 2 ou 3 anos.</li>
+                <li>Seguro da MotoSeguro da Moto</li>
+            </ul>
+            <div>
+                <h1>R$27</h1>
+                <p> / dia</p>
+            </div>
+            <button>Escolher Plano</button>
+        </section>
+        <div class="overlay"></div>
     </section>
     <section class="parceiras">
         <h2>- Parceiras -</h2>
@@ -154,7 +177,8 @@
             <img src="src/image/feedback-star.png" alt="">
             <img src="src/image/feedback-not-star.svg" alt="">
         </article>
-        <p>"Ótima iniciativa! O site é útil, mas poderia ter mais dicas de segurança e um chat ao vivo para suporte."</p>
+        <p>"Ótima iniciativa! O site é útil, mas poderia ter mais dicas de segurança e um chat ao vivo para suporte."
+        </p>
         <section>
             <div></div>
             <div class="active"></div>
@@ -183,7 +207,8 @@
                 <h5><img src="src/image/google.svg" alt="img">RideTech@hotmail.com</h5>
                 <h5>Principais Redes Sociais</h5>
                 <div>
-                    <img src="src/image/Instagram.svg" alt=""><img src="src/image/GitHub.svg" alt=""><img src="src/image/google.svg" alt="">
+                    <img src="src/image/Instagram.svg" alt=""><img src="src/image/GitHub.svg" alt=""><img
+                        src="src/image/google.svg" alt="">
                 </div>
             </nav>
             <section>
@@ -195,4 +220,5 @@
         </article>
     </footer>
 </body>
+
 </html>
