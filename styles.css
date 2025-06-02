@@ -8,6 +8,14 @@
     font-family: "JetBrains Mono", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+    scroll-behavior: smooth;
+}
+
 .flutuante {
     position: fixed;
     background-color: #00E510;
