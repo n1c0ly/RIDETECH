@@ -1,0 +1,102 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    /* z-index: 2; */
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.144);
+}
+
+/* h1 {
+    margin-top: ;
+} */
+
+main {
+    background-image: url(/src/image/background.svg);
+    background-repeat: no-repeat;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    
+
+}
+.nome {
+    margin-top: auto;
+
+}
+
+main img {
+    padding-top: 150px;
+    margin-left: 70px;
+}
+
+.camera {
+    margin-right: 500px;
+}
+
+.maps {
+    /* position: absolute; */
+    right: 30px;
+    top: 500px;
+    width: 500px;
+    height: 300px;
+    position-anchor:initial;
+
+
+}
+
+.descricao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-top: 300px;
+    width: 300px; */
+    margin-top: 150px;
+    
+}
+
+.text {
+    flex-direction: column;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 300px;
+    margin-right: auto;
+    padding-left: 70px;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.perfil {
+    display: flex;
+    margin-top: auto;
+    gap: 50px;
+}
+
+.rastreamento {
+    position: absolute;
+    top: 88%;
+    /* top: 0px; */
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.login {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 80px;
+    gap: 18px;
+    border-radius: 2px;
+    /* margin-bottom: 5px; */
+}
