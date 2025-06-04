@@ -4,7 +4,6 @@
     padding: 0;
     box-sizing: border-box;
     margin: 0;
-    text-decoration: none;
     font-family: "JetBrains Mono", monospace;
 }
 
@@ -31,14 +30,14 @@ h6 {
     font-size: 20px;
 }
 
-a {
-    text-decoration: none;
-    transition: all ease 1s;
+header nav a {
     color: black;
+    transition: all ease 0.6s;
+    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+header nav a:hover {
+    color: #52C4BF;
 }
 
 body {
