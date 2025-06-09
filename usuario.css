@@ -158,8 +158,13 @@ button {
 
 .nome h2 {
     color: lightgray;
+    margin-left: 10px;
+    /* margin-top: 5px; */
 }
 
+.nome h1 {
+     margin-left: 5px;
+}
 .nome {
     position: absolute;
     left: 320px;
