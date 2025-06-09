@@ -1,0 +1,200 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 10%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    z-index: 2;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.144);
+}
+
+nav {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 200px;
+    gap: 120px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+header nav a {
+    color: black;
+    transition: all ease 0.6s;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    color: #52C4BF;
+}
+
+header img:first-of-type {
+    max-width: 75px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+
+header div {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+header article {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 40px;
+}
+
+
+
+header article section {
+    width: 100%;
+    background-color: black;
+    height: 1px;
+    display: none;
+}
+
+@media (max-width: 890px) {
+    header nav {
+        display: none;
+    }
+
+    header div article section {
+        display: flex;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+
+    main section {
+        max-width: 80%;
+        text-align: start;
+        margin: 100px;
+    }
+
+    main article {
+        align-self: center;
+        margin-top: 0;
+        justify-content: start;
+        width: 80%;
+    }
+
+    .benefits {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .benefits article:after {
+        display: none;
+    }
+
+    .benefits article {
+        text-align: center;
+        align-items: center;
+        max-width: 40%;
+        gap: 5px;
+        margin: 15px;
+    }
+
+    .sobre-nos {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .sobre-nos article {
+        max-width: 90%;
+        align-items: start;
+        text-align: start;
+    }
+
+    .sobre-nos h2 {
+        font-size: 30px;
+    }
+
+    .sobre-nos h6 {
+        font-size: 14px;
+    }
+
+    .sobre-nos img {
+        max-width: 30%;
+    }
+
+    .parceiras article img {
+        max-width: 8%;
+    }
+
+    footer article:first-of-type {
+        flex-direction: column;
+        width: auto;
+        align-self: flex-start;
+        gap: 50px;
+    }
+
+    footer article section {
+        max-width: 80%;
+    }
+
+}
+
+.planoprincipal {
+    margin-top: 200px;
+    display: flex;
+    /* align-items: center; */
+    justify-content:flex-start;
+    flex-direction: column;
+    width: 414px;
+    height: 146px;
+    background-color: #52C4BF;
+    border-radius: 10px;
+
+}
+
+.planoprincipal h3 {
+    color:  lightgray;
+    font-size: 19px;
+}
+
+.planoprincipal h2 {
+    font-size: 29px;
+}
+
+.planoprincipal p {
+    font-size: 17px;
+}
+
+.desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 492px;
+    height: 558px;
+    border: 2px solid black;
+    padding-top: 20px;
+
+}

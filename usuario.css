@@ -177,3 +177,91 @@ button {
     border-radius: 30px;
     /* z-index: 1; */
 }
+
+@media (max-width: 890px) {
+    header nav {
+        display: none;
+    }
+
+    header div article section {
+        display: flex;
+    }
+
+    main {
+        flex-direction: column;
+        padding: 50px 0px;
+    }
+
+    main section {
+        max-width: 80%;
+        text-align: start;
+        margin: 100px;
+    }
+
+    main article {
+        align-self: center;
+        margin-top: 0;
+        justify-content: start;
+        width: 80%;
+    }
+
+    .benefits {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 50px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .benefits article:after {
+        display: none;
+    }
+
+    .benefits article {
+        text-align: center;
+        align-items: center;
+        max-width: 40%;
+        gap: 5px;
+        margin: 15px;
+    }
+
+    .sobre-nos {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .sobre-nos article {
+        max-width: 90%;
+        align-items: start;
+        text-align: start;
+    }
+
+    .sobre-nos h2 {
+        font-size: 30px;
+    }
+
+    .sobre-nos h6 {
+        font-size: 14px;
+    }
+
+    .sobre-nos img {
+        max-width: 30%;
+    }
+
+    .parceiras article img {
+        max-width: 8%;
+    }
+
+    footer article:first-of-type {
+        flex-direction: column;
+        width: auto;
+        align-self: flex-start;
+        gap: 50px;
+    }
+
+    footer article section {
+        max-width: 80%;
+    }
+
+}
