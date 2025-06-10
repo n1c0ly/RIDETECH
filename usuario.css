@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   
+}
 header{
     display: flex;
     align-items: center;
@@ -19,6 +35,7 @@ nav {
     justify-content: center;
     margin-right: 400px;
 gap: 85px; 
+border: none;
 }
 
 nav a {
@@ -36,18 +53,16 @@ nav a:hover {
 
 main {
     background-image: url(/src/image/background.svg);
-    background-repeat: no-repeat;
+    
     height: 300px;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: start;
+
+ background-size: cover
     
 
 }
-.nome {
-    margin-top: auto;
 
-}
 
 main img {
     padding-top: 150px;
@@ -58,14 +73,11 @@ main img {
     margin-right: 500px;
 }
 
-.maps {
+.maps{
     /* position: absolute; */
-    right: 30px;
-    top: 500px;
-    width: 500px;
-    height: 418px;
-    position-anchor:initial;
-
+ display: flex;
+ align-items: center;
+ justify-content: center;
 
 }
 
@@ -76,6 +88,8 @@ main img {
     /* margin-top: 300px;
     width: 300px; */
     margin-top: 150px;
+   gap: 200px;
+   
     
 }
 
@@ -86,15 +100,17 @@ main img {
     justify-content: center;
     width: 300px;
     margin-right: auto;
-    padding-left: 70px;
-    text-decoration: none;
+
     text-align: justify;
 }
 
 .perfil {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: auto;
     gap: 50px;
+    border: none;
 }
 
 .rastreamento {
@@ -136,15 +152,18 @@ button {
 
 
 .planinho {
-    position: absolute;
+   
     right: 0px;
-    top: 350px;
-    display: flex;
+   position: absolute;
+ display: flex; 
+ padding-top: 13%;
     align-items: center;
     justify-content: center;
     width: 200px;
     height: 20px;
+    gap: 10px;
     z-index: 1;
+    margin-right: 5%;
 }
 
 .planinho button:hover {
@@ -157,28 +176,29 @@ button {
 }
 
 .nome h2 {
+    font-family: "JetBrains Mono", monospace;
     color: lightgray;
-    margin-left: 10px;
+  
     /* margin-top: 5px; */
 }
 
 .nome h1 {
-     margin-left: 5px;
+    font-family: "JetBrains Mono", monospace;
+   height: 30px;
 }
 .nome {
-    position: absolute;
-    left: 320px;
-    top: 320px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    align-items: center;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    align-items: start;
     gap: 5px;
-    /* justify-content: flex-start; */
+padding-top: 37%;
     width: 400px;
-    height: 100px;
-    /* margin-right: 400px; */
+  
+   
     margin-left: 30px;
-    border: 2px solid lightgray;
+
     border-radius: 30px;
     /* z-index: 1; */
 }
