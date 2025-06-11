@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ridetech</title>
+        <link rel="stylesheet" href="home.css">
+        <script src="main.js" defer></script>
+    </head>
+
+    <body>
+        -->
+        <header>
+            <img src="imagens/image/logo-grande.png" alt="logo">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#servicos">Services</a>
+                <a href="#sobrenos">About-us</a>
+                <a href="#planos">Plans</a>
+                <a href="#feedback">FeedBack</a>
+                <!-- coloquei os IDS para fazer a página rolar para cada determinada opção, não funciona com class -->
+                <!-- html {
+     scroll-behavior: smooth;
+   }
+   
+   isso no css deveria deixar a descida mas suave mas por algum motivo não vai"
+                -->
+            </nav>
+            <div>
+                <a href="usuario.html" >
+                    <img src="imagens/image/fotoperfil.svg" alt="user" >
+
+                    <!-- o nome do perfil substituiu o numero do perfil -->
+                </a>
+                <!-- nav-mobile -->
+                <article>
+                    <section></section>
+                    <section></section>
+                    <section></section>
+                </article>
+            </div>
+        </header>
+        <div class="flutuante" >
+            <a href="https://web.whatsapp.com" target="_blank"> 
+                <img src="imagens/image/flutuante-img.svg" alt="">
+            </a>
+        </div>
+        <main id="home">
+            <section >
+                <h1>Segurança sobre duas rodas, confiança em cada jornada.</h1>
+                <p>Priorizamos saúde e segurança, e apoiaremos seu início.</p>
+            </section>
+            <article>
+                <button onclick="window.location.href = 'index.html'">Entrar</button>
+                <button onclick="window.location.href = 'cadastro.html'">Cadastrar</button>
+            </article>
+
+        </main>
+        <section class="benefits" id="servicos">
+            <article>
+                <img src="imagens/image/benefits-img1.png" alt="kit-motoboy">
+                <h4>Kit Motoboy</h4>
+                <p>Bag da empresa,Celular Empresarial,Coletes Personalizaveis, Capacete de proteção e Capas de Chuva</p>
+            </article>
+            <article>
+                <img src="imagens/image/benefits-img4.png" alt="kit-motoboy">
+                <h4>Aluguel de Moto</h4>
+                <p>Motos Econômicas, Seguro e Reboque</p>
+            </article>
+            <article>
+                <img src="imagens/image/benefits-img3.png" alt="kit-motoboy">
+                <h4>Seguro de Vida</h4>
+                <p>Plano de Saúde, Despesas Hospitalares, Cobertura Morte Acidental</p>
+            </article>
+            <article>
+                <img src="imagens/image/benefits-img2.png" alt="kit-motoboy">
+                <h4>Manutenção</h4>
+                <p>Peças de qualidade, inspeção regular, substituição de peças quando necessario.</p>
+            </article>
+        </section>
+        <section class="sobre-nos" id="sobrenos">
+            <article>
+                <h2>Sobre Nós</h2>
+                <h6>Na RideTech, entendemos os desafios do dia a dia de um motoboy e estamos aqui para garantir sua
+                    segurança e bem-estar. Oferecemos seguros para motos e vida, além de kits essenciais como capacetes e
+                    capas de chuva. Nosso objetivo é trazer mais proteção e tranquilidade para quem vive nas estradas.
+                    Porque sua segurança é a nossa prioridade!</h6>
+            </article>
+            <img src="imagens/image/logo-grande.png" alt="">
+        </section>
+        <section class="planos" id="planos">
+            <h2>- Planos -</h2>
+            <article>
+                <section>
+                    <h5>Plano</h5>
+                    <h3>Minha Motoquinha</h3>
+                    <p>Você aluga a moto e no final poderá ser sua</p>
+                    <ul>
+                        <li>Plano com duração de 2 ou 3 anos.</li>
+                        <li>Seguro da Moto</li>
+                    </ul>
+                    <div>
+                        <h1>R$40,99</h1>
+                        <p> / dia</p>
+                    </div>
+                    <a href="pagamento.html">
+                        <button class="open-plan">Escolher Plano</button>
+                    </a>
+                </section>
+                <section id="motoquinha">
+                    <h5>Plano</h5>
+                    <h3>Minha Honda</h3>
+                    <p>Você aluga a moto e no final poderá ser sua</p>
+                    <ul>
+                        <li>Plano com duração de 2 ou 3 anos.</li>
+                        <li>Seguro da Moto</li>
+                        <li>Kit basico Motoboy</li>
+
+
+                    </ul>
+                    <div>
+                        <h1>R$62,99</h1>
+                        <p> / dia</p>
+                    </div>
+                    <!-- <a href="/src/pages/pagamento.html"> -->
+                    <button class="open-plan">Escolher Plano</button>
+                    <!-- </a> -->
+                </section>
+                <section>
+                    <h5>Plano</h5>
+                    <h3>Minha Moto</h3>
+                    <p>Você aluga a moto e no final poderá ser sua</p>
+                    <ul>
+                        <li>Plano com duração de 2 ou 3 anos.</li>
+                        <li>motos personalizadas</li>
+                        <li>seguro da moto + Kit Motoboy + Batlepass</li>
+                    </ul>
+                    <div>
+                        <h1>R$127,99</h1>
+                        <p> / dia</p>
+                    </div>
+                    <!-- <a href="/src/pages/pagamento.html"> -->
+                    <button class="open-plan">Escolher Plano</button>
+                    <!-- </a> -->
+                </section>
+            </article>
+            <section class="modal-plan" id="modal-plan">
+                <h5>Plano</h5>
+                <h3>Minha Motoquinha</h3>
+                <p>Você aluga a moto e no final poderá ser sua</p>
+                <ul>
+                    <li>Plano com duração de 2 ou 3 anos.</li>
+                    <li>Seguro da MotoSeguro da Moto</li>
+                </ul>
+                <div>
+                    <h1>R$27</h1>
+                    <p> / dia</p>
+                </div>
+                <button>Escolher Plano</button>
+            </section>
+            <div class="overlay"></div>
+        </section>
+        <section class="parceiras">
+            <h2>- Parceiras -</h2>
+            <article>
+                <img src="imagens/image/parceira1.png" alt="">
+                <img src="imagens/image/parceira2.png" alt="">
+                <img src="imagens/image/parceira3.png" alt="">
+                <img src="imagens/image/parceira4.png" alt="">
+                <img src="imagens/image/parceira5.png" alt="">
+            </article>
+        </section>
+        <section class="feedback" id="feedback">
+            <h2>- Feedback -</h2>
+            <img src="imagens/image/feedback-user.png" alt="user-img">
+            <article>
+                <img src="imagens/image/feedback-star.png" alt="">
+                <img src="imagens/image/feedback-star.png" alt="">
+                <img src="imagens/image/feedback-star.png" alt="">
+                <img src="imagens/image/feedback-star.png" alt="">
+                <img src="imagens/image/feedback-not-star.svg" alt="">
+            </article>
+            <p>"Ótima iniciativa! O site é útil, mas poderia ter mais dicas de segurança e um chat ao vivo para suporte."
+            </p>
+            <section>
+                <div></div>
+                <div class="active"></div>
+                <div></div>
+            </section>
+            <div class="seta">
+                <img src="imagens/image/feedback-seta.png" alt="">
+            </div>
+            <div class="seta esquerda">
+                <img src="imagens/image/feedback-seta.png" alt="">
+            </div>
+        </section>
+        <footer>
+            <img src="imagens/image/Logo.svg" alt="">
+            <article>
+                <nav>
+                    <a href=""><strong>Home</strong></a>
+                    <a href="">Services</a>
+                    <a href="">About Us</a>
+                    <a href="">Contacts</a>
+                    <a href="">Plans</a>
+                </nav>
+                <nav>
+                    <strong>Entre em Contato</strong>
+                    <a href="https://web.whatsapp.com/" target="_blank">
+                        <h5><img src="imagens/image/whatsapp.svg" alt="img">+55 (11) 98569-0025</h5>
+                    </a>
+                    <h5><img src="imagens/image/google.svg" alt="img">RideTech@hotmail.com</h5>
+                    <h5>Principais Redes Sociais</h5>
+                    <div>
+                        <img src="imagens/image/Instagram.svg" alt=""><img src="imagens/image/GitHub.svg" alt=""><img
+                            src="imagens/image/google.svg" alt="">
+                    </div>
+                </nav>
+                <section>
+                    <strong>Receba Atualizações</strong>
+                    <h5>Insira seu email para futuras atualizações e descontos</h5>
+                    <input type="email" placeholder="example@gmail.com">
+                    <button>Cadastrar</button>
+                </section>
+            </article>
+        </footer>
+    </body>
+
+</html>

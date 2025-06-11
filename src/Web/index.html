@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <div class="close-btn">×</div>
+      <h1>Entrar</h1>
+      <form  action="login.jsp">
+        <label for="email">E-mail ou CPF:</label>
+        <input type="text" id="email" name="email" />
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" />
+        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+
+        <button type="submit" class="login-btn">ENTRAR</button>
+
+        <div class="divider">
+          <hr><span>ou</span>
+          <hr>
+        </div>
+
+        <button class="google-btn">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+          ENTRAR COM O GOOGLE
+        </button>
+
+        <p class="signup-link">Ainda não possui uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

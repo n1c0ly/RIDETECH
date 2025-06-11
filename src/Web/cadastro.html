@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastrar</title>
+  <link rel="stylesheet" href="cadastro.css"/>
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-section">
+      <div class="close-btn">×</div>
+      <h1>Cadastrar</h1>
+      <form id="cadastro-form" action="cadastro.jsp" method="post">
+        <label for="email">E-mail ou CPF:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="senha">Criar Senha:</label>
+        <input type="password" id="senha" name="senha" required />
+
+        <label for="confirmarsenha">Confirmar Senha:</label>
+        <input type="password" id="confirmarsenha" name="confirmarsenha" required />
+
+        <!-- Div para mostrar a mensagem de erro -->
+        <div id="erro-senha" style="color: red; margin-bottom: 10px;"></div>
+
+        <button type="submit" class="create-btn">Criar conta</button>
+
+        <div class="divider">
+          <hr><span>ou</span>
+          <hr>
+        </div>
+
+        <button class="google-btn" type="button">
+          <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google">
+          ENTRAR COM O GOOGLE
+        </button>
+
+        <p class="login-link">Já possui uma conta? <a href="#">Entrar</a>.</p>
+      </form>
+    </div>
+
+    <div class="image-section">
+      <img src="./body-img.png" alt="Imagem de cadastro">
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("cadastro-form").addEventListener("submit", function(e) {
+      const senha = document.getElementById("senha").value;
+      const confirmar = document.getElementById("confirmarsenha").value;
+      const erroDiv = document.getElementById("erro-senha");
+
+      if (senha !== confirmar) {
+        e.preventDefault(); // Impede envio do form
+        erroDiv.textContent = "As senhas não coincidem.";
+      } else {
+        erroDiv.textContent = ""; // Limpa erro
+      }
+    });
+  </script>
+</body>
+
+</html>
