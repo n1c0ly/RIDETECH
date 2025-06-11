@@ -12,7 +12,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
+    
 }
 
 header {
@@ -69,7 +69,7 @@ main img {
 }
 
 .camera {
-   padding-right: 500px;
+    /* padding-right: 500px; */
 }
 
 .maps {
@@ -80,27 +80,30 @@ main img {
 
 }
 
-iframe{
-    width: 400px;
-padding-right: 50px;
+iframe {
+    width: 500px;
+    padding-right: 70px;
+    margin-top: 50px;
 }
 
 .descricao {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 150px;
-    width:100% ;
+    justify-content: start;
+    margin-top: 250px;
+    width: 100%;
 }
 
 .text {
     flex-direction: column;
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: start;
     /* width: 300px; */
     margin-right: auto;
-
+padding-left: 70px;
+margin-bottom: auto;
+width: 300px;
     text-align: justify;
 }
 
@@ -114,10 +117,11 @@ padding-right: 50px;
 }
 
 .rastreamento {
-    position:relative;
+    position: absolute;
     /* top: 88%; */
     /* top: 0px; */
-    width: 50%;
+    width: 400px;
+   
 }
 
 button {
@@ -131,32 +135,34 @@ button {
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    margin: 80px;
+   
     gap: 18px;
     border-radius: 2px;
+    margin-bottom: auto;
     /* margin-bottom: 5px; */
+    margin-right: auto;
 }
 
 .login button {
-    margin-top: 40px;
+ 
+    margin-top: 20px;
     background-color: #2196F3;
-    width: 310px;
+    width: 250px;
     border-radius: 2px;
     color: white;
     height: 36px;
 }
 
 .login input {
-    width: 100%;
+    width: 250px;
     height: 36px;
 }
 
 .planinho {
-
     right: 0px;
     position: absolute;
     display: flex;
-    padding-top: 13%;
+    padding-top: 21%;
     align-items: center;
     justify-content: center;
     width: 200px;
@@ -178,11 +184,13 @@ button {
 .nome h2 {
     font-family: "JetBrains Mono", monospace;
     color: lightgray;
+    font-size: 18px;
 }
 
 .nome h1 {
     font-family: "JetBrains Mono", monospace;
-    height: 30px;
+    height: 10px;
+font-size: 22px;
 }
 
 .nome {
@@ -192,12 +200,8 @@ button {
     flex-direction: column;
     align-items: start;
     gap: 5px;
-    padding-top: 37%;
-    width: 400px;
-
-
-    margin-left: 30px;
-
+    padding-top: 35%;
+    width: 100%;
     border-radius: 30px;
     /* z-index: 1; */
 }
