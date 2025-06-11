@@ -1,24 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
 
-*{
+* {
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   
+    width: 100%;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 13px 10%;
+    justify-content: center;
+    padding: 13px 15%;
     width: 100%;
     position: fixed;
     top: 0;
@@ -29,16 +30,20 @@ header{
 }
 
 nav {
-    width: 700px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 400px;
-gap: 85px; 
-border: none;
+
+    gap: 5%;
+    border: none;
 }
 
 nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     color: black;
     text-decoration: none;
 }
@@ -47,20 +52,14 @@ nav a:hover {
     text-decoration: underline;
     text-decoration-color: black;
 }
-/* h1 {
-    margin-top: ;
-} */
 
 main {
     background-image: url(/src/image/background.svg);
-    
+
     height: 300px;
     width: 100%;
     display: flex;
-
- background-size: cover
-    
-
+    background-size: cover
 }
 
 
@@ -70,27 +69,28 @@ main img {
 }
 
 .camera {
-    margin-right: 500px;
+   padding-right: 500px;
 }
 
-.maps{
+.maps {
     /* position: absolute; */
- display: flex;
- align-items: center;
- justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+
+iframe{
+    width: 400px;
+padding-right: 50px;
 }
 
 .descricao {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* margin-top: 300px;
-    width: 300px; */
     margin-top: 150px;
-   gap: 200px;
-   
-    
+    width:100% ;
 }
 
 .text {
@@ -98,7 +98,7 @@ main img {
     display: flex;
     align-items: start;
     justify-content: center;
-    width: 300px;
+    /* width: 300px; */
     margin-right: auto;
 
     text-align: justify;
@@ -114,9 +114,10 @@ main img {
 }
 
 .rastreamento {
-    position: absolute;
+    position:relative;
     /* top: 88%; */
     /* top: 0px; */
+    width: 50%;
 }
 
 button {
@@ -146,17 +147,16 @@ button {
 }
 
 .login input {
-    width: 304px;
+    width: 100%;
     height: 36px;
 }
 
-
 .planinho {
-   
+
     right: 0px;
-   position: absolute;
- display: flex; 
- padding-top: 13%;
+    position: absolute;
+    display: flex;
+    padding-top: 13%;
     align-items: center;
     justify-content: center;
     width: 200px;
@@ -178,25 +178,24 @@ button {
 .nome h2 {
     font-family: "JetBrains Mono", monospace;
     color: lightgray;
-  
-    /* margin-top: 5px; */
 }
 
 .nome h1 {
     font-family: "JetBrains Mono", monospace;
-   height: 30px;
+    height: 30px;
 }
+
 .nome {
 
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: start;
     gap: 5px;
-padding-top: 37%;
+    padding-top: 37%;
     width: 400px;
-  
-   
+
+
     margin-left: 30px;
 
     border-radius: 30px;
