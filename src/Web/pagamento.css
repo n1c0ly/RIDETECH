@@ -165,7 +165,6 @@ header article section {
 .planoprincipal {
     margin-top: 200px;
     display: flex;
-    /* align-items: center; */
     justify-content:flex-start;
     flex-direction: column;
     width: 414px;
