@@ -4,7 +4,15 @@ const buttons = document.querySelectorAll('.open-plan')
 const modals = document.querySelectorAll('.modal-plan')
 const overlay = document.querySelector('.overlay')
 
+const navBar = document.getElementById("navbar")
+const hamburguer = document.getElementById('hamburguer')
+
 const body = document.querySelector('body')
+
+hamburguer.addEventListener('click', () => {
+  navBar.classList.toggle('active')
+})
+
 
 buttons.forEach(button => {
     button.addEventListener('click', () => {

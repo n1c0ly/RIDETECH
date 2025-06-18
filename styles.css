@@ -541,34 +541,27 @@ footer h5 {
     align-items: start;
 }
 
-#pagamento {
-    top: -20%;
+.modal-plan.pagamento {
     max-width: 600px;
-    align-items: center;
-    position: absolute;
-    text-align: start;
-    align-items: inherit;
-    flex-direction: column;
-    gap: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.596);
-    border-radius: 15px;
-    padding: 40px;
-    background-color: white;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.199);
 }
 
-#pagamento > div:first-of-type {
+.modal-plan.pagamento > div:first-of-type {
     align-items: start;
 }
 
-#pagamento div {
+.modal-plan.pagamento div {
     align-items: center;
 }
 
-#pagamento > p:nth-of-type(1) {
+.modal-plan.pagamento > p:nth-of-type(1) {
     align-self: flex-end;
 }
-#pagamento > h2 {
+
+.modal-plan.pagamento > p:nth-of-type(2) {
+    align-self: center;
+}
+
+.modal-plan.pagamento > h2 {
     align-self: flex-start;
     font-size: 20px;
 }
@@ -625,8 +618,23 @@ footer h5 {
 
 
 @media (max-width: 890px) {
+
     header nav {
         display: none;
+    }
+
+    header nav.active {
+        height: 90vh;
+        bottom: -90vh;
+        right: 0;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: rgb(248, 248, 248);
+        justify-content: start;
+        padding-top: 100px;
+        z-index: 100;
     }
 
     header div article section {

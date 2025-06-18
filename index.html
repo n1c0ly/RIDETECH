@@ -13,14 +13,12 @@
    
     <header>
         <img src="src/image/logo-grande.png" alt="logo">
-        <nav>
+        <nav class="" id="navbar">
             <a href="#home">Home</a>
             <a href="#servicos">Services</a>
             <a href="#sobrenos">About-us</a>
             <a href="#planos">Plans</a>
             <a href="#feedback">FeedBack</a>
-           
- 
         </nav>
         <div>
             <a href="/src/pages/usuario.html" >
@@ -28,7 +26,7 @@
 
             </a>
             <!-- nav-mobile -->
-            <article>
+            <article id="hamburguer">
                 <section></section>
                 <section></section>
                 <section></section>
@@ -129,6 +127,9 @@
                 <button class="open-plan" data-modal="modal3">Escolher Plano</button>
             </section>
         </article>
+
+        <!-- modais sobre os planos -->
+
         <section class="modal-plan" id="modal1">
             <h5>Plano</h5>
             <h3>Minha Motoquinha</h3>
@@ -141,7 +142,7 @@
                 <h1>R$429.99</h1>
                 <p> / Mês</p>
             </div>
-            <button class="open-plan" data-modal="pagamento">Escolher Plano</button>
+            <button class="open-plan" data-modal="pagamento1">Escolher Plano</button>
         </section>
         <section class="modal-plan" id="modal2">
             <h5>Plano</h5>
@@ -155,7 +156,7 @@
                 <h1>R$524.99</h1>
                 <p> / Mês</p>
             </div>
-            <button class="open-plan" data-modal="pagamento">Escolher Plano</button>
+            <button class="open-plan" data-modal="pagamento2">Escolher Plano</button>
         </section>
         <section class="modal-plan" id="modal3">
             <h5>Plano</h5>
@@ -169,10 +170,14 @@
                 <h1>R$614.99</h1>
                 <p> / Mês</p>
             </div>
-            <button class="open-plan" data-modal="pagamento">Escolher Plano</button>
+            <button class="open-plan" data-modal="pagamento3">Escolher Plano</button>
         </section>
-        <section class="modal-plan" id="pagamento">
 
+        <!-- fim dos modais sobre -->
+
+        <!-- inicio dos modais de pagamentos -->
+
+        <section class="modal-plan pagamento" id="pagamento1">
             <div class="plano principal">
                 <h3>Plano</h3>
                 <h2>Minha Motoquinha</h2>
@@ -207,8 +212,88 @@
                 </section>
             </div>
             <p>Precisa de <a href="">ajuda</a>?</p>
-
         </section>
+
+        <!-- pagamento2 -->
+
+        <section class="modal-plan pagamento"  id="pagamento2">
+            <div class="plano principal">
+                <h3>Plano</h3>
+                <h2>Minha Motoca</h2>
+                <p>Você aluga a moto e no final poderá ser sua</p>
+                <strong>Plano com duração de 2 ou 3 anos.</strong>
+            </div>
+            <p>Subtotal: R$524.99 / Mês </p>
+            <div class="plano cupons">
+                <img src="/src/image/cupom-cupom.svg" alt="cupom-cupom">
+                <section>
+                    <strong>Cupons</strong>
+                    <h3>Digite o código do seu cupom de desconto.</h3>
+                </section>
+                <img src="/src/image/img-cupom.svg" alt="cupom-seta">
+            </div>
+            <h2>Formas de Pagamento</h2>
+            <div class="plano final">
+                <section>
+                    <img src="/src/image/img-pix.svg" alt="">
+                    <h3>Pagar com pix</h3>
+                    <div class="bolinha"></div>
+                </section>
+                <section>
+                    <img src="/src/image/img-cartao.svg" alt="">
+                    <h3>Pagar com cartão</h3>
+                    <div class="bolinha"></div>
+                </section>
+                <section>
+                    <img src="/src/image/img-boleto.svg" alt="">
+                    <h3>Pagar com boleto</h3>
+                    <div class="bolinha"></div>
+                </section>
+            </div>
+            <p>Precisa de <a href="">ajuda</a>?</p>
+        </section>
+
+        <!-- pagamento3 -->
+
+        <section class="modal-plan pagamento" id="pagamento3">
+            <div class="plano principal">
+                <h3>Plano</h3>
+                <h2>Minha Motocão</h2>
+                <p>Você aluga a moto e no final poderá ser sua</p>
+                <strong>Plano com duração de 2 ou 3 anos.</strong>
+            </div>
+            <p>Subtotal: R$614.99 / Mês </p>
+            <div class="plano cupons">
+                <img src="/src/image/cupom-cupom.svg" alt="cupom-cupom">
+                <section>
+                    <strong>Cupons</strong>
+                    <h3>Digite o código do seu cupom de desconto.</h3>
+                </section>
+                <img src="/src/image/img-cupom.svg" alt="cupom-seta">
+            </div>
+            <h2>Formas de Pagamento</h2>
+            <div class="plano final">
+                <section>
+                    <img src="/src/image/img-pix.svg" alt="">
+                    <h3>Pagar com pix</h3>
+                    <div class="bolinha"></div>
+                </section>
+                <section>
+                    <img src="/src/image/img-cartao.svg" alt="">
+                    <h3>Pagar com cartão</h3>
+                    <div class="bolinha"></div>
+                </section>
+                <section>
+                    <img src="/src/image/img-boleto.svg" alt="">
+                    <h3>Pagar com boleto</h3>
+                    <div class="bolinha"></div>
+                </section>
+            </div>
+            <p>Precisa de <a href="">ajuda</a>?</p>
+        </section>
+
+        <!-- fim dos pagamentos -->
+
         <div class="overlay"></div>
     </section>
     <section class="parceiras">
