@@ -100,7 +100,7 @@
                 </div>
                 <button class="open-plan" data-modal="modal1">Escolher Plano</button>
             </section>
-            <section id="motoquinha">
+            <section >
                 <h5>Plano</h5>
                 <h3>Minha Motoca</h3>
                 <p>Você aluga a moto e no final poderá ser sua</p>
@@ -141,7 +141,7 @@
                 <h1>R$429.99</h1>
                 <p> / Mês</p>
             </div>
-            <button class="plan-button" >Escolher Plano</button>
+            <button class="open-plan" data-modal="pagamento">Escolher Plano</button>
         </section>
         <section class="modal-plan" id="modal2">
             <h5>Plano</h5>
@@ -155,7 +155,7 @@
                 <h1>R$524.99</h1>
                 <p> / Mês</p>
             </div>
-            <button class="plan-button">Escolher Plano</button>
+            <button class="open-plan" data-modal="pagamento">Escolher Plano</button>
         </section>
         <section class="modal-plan" id="modal3">
             <h5>Plano</h5>
@@ -169,7 +169,45 @@
                 <h1>R$614.99</h1>
                 <p> / Mês</p>
             </div>
-            <button class="plan-button">Escolher Plano</button>
+            <button class="open-plan" data-modal="pagamento">Escolher Plano</button>
+        </section>
+        <section class="modal-plan" id="pagamento">
+
+            <div class="plano principal">
+                <h3>Plano</h3>
+                <h2>Minha Motoquinha</h2>
+                <p>Você aluga a moto e no final poderá ser sua</p>
+                <strong>Plano com duração de 2 ou 3 anos.</strong>
+            </div>
+            <p>Subtotal: R$429.99 / Mês </p>
+            <div class="plano cupons">
+                <img src="/src/image/cupom-cupom.svg" alt="cupom-cupom">
+                <section>
+                    <strong>Cupons</strong>
+                    <h3>Digite o código do seu cupom de desconto.</h3>
+                </section>
+                <img src="/src/image/img-cupom.svg" alt="cupom-seta">
+            </div>
+            <h2>Formas de Pagamento</h2>
+            <div class="plano final">
+                <section>
+                    <img src="/src/image/img-pix.svg" alt="">
+                    <h3>Pagar com pix</h3>
+                    <div class="bolinha"></div>
+                </section>
+                <section>
+                    <img src="/src/image/img-cartao.svg" alt="">
+                    <h3>Pagar com cartão</h3>
+                    <div class="bolinha"></div>
+                </section>
+                <section>
+                    <img src="/src/image/img-boleto.svg" alt="">
+                    <h3>Pagar com boleto</h3>
+                    <div class="bolinha"></div>
+                </section>
+            </div>
+            <p>Precisa de <a href="">ajuda</a>?</p>
+
         </section>
         <div class="overlay"></div>
     </section>
@@ -184,29 +222,64 @@
         </article>
     </section>
     <section class="feedback" id="feedback">
-        <h2>- Feedback -</h2>
-        <img src="src/image/feedback-user.png" alt="user-img">
-        <article>
-            <img src="src/image/feedback-star.png" alt="">
-            <img src="src/image/feedback-star.png" alt="">
-            <img src="src/image/feedback-star.png" alt="">
-            <img src="src/image/feedback-star.png" alt="">
-            <img src="src/image/feedback-not-star.svg" alt="">
-        </article>
-        <p>"Ótima iniciativa! O site é útil, mas poderia ter mais dicas de segurança e um chat ao vivo para suporte."
-        </p>
-        <section>
-            <div></div>
-            <div class="active"></div>
-            <div></div>
-        </section>
-        <div class="seta">
-            <img src="src/image/feedback-seta.png" alt="">
-        </div>
-        <div class="seta esquerda">
-            <img src="src/image/feedback-seta.png" alt="">
-        </div>
-    </section>
+  <h2>- Feedback -</h2>
+
+  <div class="feedbacks" id="feedbacks">
+    <!-- Slide 1 -->
+    <article class="feedback-item">
+      <img src="src/image/feedback-user.png" alt="user-img">
+      <article>
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-not-star.svg" alt="">
+      </article>
+      <p>"Ótima iniciativa! O site é útil, mas poderia ter mais dicas de segurança e um chat ao vivo para suporte."</p>
+    </article>
+
+    <!-- Slide 2 -->
+    <article class="feedback-item">
+      <img src="src/image/feedback-user.png" alt="user-img">
+      <article>
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-star.png" alt="">
+      </article>
+      <p>"Muito bom! Achei a navegação intuitiva e o design moderno."</p>
+    </article>
+
+    <!-- Slide 3 -->
+    <article class="feedback-item">
+      <img src="src/image/feedback-user.png" alt="user-img">
+      <article>
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-star.png" alt="">
+        <img src="src/image/feedback-not-star.svg" alt="">
+        <img src="src/image/feedback-not-star.svg" alt="">
+      </article>
+      <p>"Poderia ter mais conteúdos atualizados, mas é promissor."</p>
+    </article>
+  </div>
+
+  <!-- Botões e indicadores -->
+  <section class="indicadores">
+    <div></div>
+    <div class="active"></div>
+    <div></div>
+  </section>
+
+  <div class="seta" onclick="proximo()">
+    <img src="src/image/feedback-seta.png" alt="">
+  </div>
+  <div class="seta esquerda" onclick="anterior()">
+    <img src="src/image/feedback-seta.png" alt="">
+  </div>
+</section>
+
     <footer>
         <img src="src/image/Logo.svg" alt="">
         <article>

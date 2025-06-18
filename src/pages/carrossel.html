@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script defer>
+    // aqui viria o codigo a parte do javascripto, vou deixar aqui para eu entender como faz e talvez mostrar para vcs como faz. só talvez, não venha pensando que vai descobrir só lendo, uma coisa que eu queria que fosse possivel
+
+    let indiceAtual = 0;
+
+    function atualizarCarrossel() {
+      const carrossel = document.getElementById('carrossel');
+      carrossel.style.transform = `translateX(-${indiceAtual * 100}vw)`;
+    }
+
+    function proximo() {
+      const total = document.getElementById('carrossel').children.length;
+      indiceAtual = (indiceAtual + 1) % total;
+      atualizarCarrossel();
+    }
+
+    function anterior() {
+      const total = document.getElementById('carrossel').children.length;
+      indiceAtual = (indiceAtual - 1 + total) % total;
+      atualizarCarrossel();
+    }
+
+
+</script>
+
+<style>
+
+    /* se fosse apenas main seria mais facil, mas vou tentar assim igual no gepeto */
+    .carrossel-container {
+        width: 100%;
+        overflow: hidden;
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+
+    .carrossel {
+        display: flex;
+        width: 300vw;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carrossel section {
+        display: flex;
+        width: 100vw;
+    }
+
+    .carrossel-botoes {
+        text-align: center;
+    }
+
+
+
+
+</style>
+
+<body>
+    <!-- ain oque é isso??? é um teste para carrossel, que será aplicado no index.html, eu poderia ter feito isso a mili anos, mas não não, eu sou um jenio e deixei para ultima hora do dia 17/06 as 21:34 da noite, pq???? não sei, deveria ter feito antes e preciso parar de fazer comentarios aleatorios e sem sentidos como esse mas fazer oq  -->
+
+    <main class="carrossel-container">
+
+        <div class="carrossel" id="carrossel">
+
+            <!-- aqui conterá os itens do carrossel, que no caso vai ser sessoes com cada comentario -->
+
+            <section class="carrossel-section">
+                <h1>teste, section 1</h1>
+            </section>
+            <section class="carrossel-section">
+                <h1>teste, section 2</h1>
+            </section>
+            <section class="carrossel-section">
+                <h1>teste, section 3</h1>
+            </section>
+        </div>
+
+        <!-- aqui vira os botoes para passar de um lado para o outro no carrossel, sendo eles com as funções proximo() e anterior do javascripto -->
+
+        <div class="carrossel-botoes">
+            <!-- no futuro, no caso dps das 22hrs eu coloco as imagens aqui, mas a versão final sera a do index. -->
+            <button onclick="proximo()">Proximo</button>
+            <button onclick="anterior()">Voltar</button>
+        </div>
+
+    </main>
+
+</body>
+</html>

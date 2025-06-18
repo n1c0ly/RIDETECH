@@ -301,39 +301,51 @@ main button:first-of-type {
 }
 
 .feedback {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 50px 0px;
-    background: linear-gradient(360deg, rgba(97, 212, 207, 0.7) 6%, rgba(159, 235, 232, 0.7) 76.58%);
-    padding: 50px;
-    justify-content: space-between;
-    gap: 35px;
-    position: relative;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #5debe4;
+  overflow: hidden;
+  padding: 70px 0px;
 }
 
-.feedback p {
-    text-align: center;
-    max-width: 50%;
+.feedbacks {
+  display: flex;
+  width: 300vw;
+  transition: transform 0.5s ease-in-out;
 }
 
-.feedback section {
-    position: relative;
-    display: flex;
-    gap: 20px;
+.feedback-item {
+  flex-shrink: 0;
+  width: 100vw;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  justify-content: center;
 }
 
-.feedback section div {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: grey;
+.feedback-item p {
+  width: 30%;
+  text-align: center;
 }
 
-.feedback section div.active {
-    background-color: black;
+.seta {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
+
+.seta.esquerda {
+  left: 10px;
+  right: auto;
+}
+
 
 .seta {
     display: flex;
@@ -484,6 +496,133 @@ footer h5 {
     align-items: center;
     gap: 12px;
 }
+
+
+
+
+.plano {
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    flex-direction: column;
+    background: rgba(82, 196, 191, 0.3);
+    border: 1px solid #52C4BF;
+    border-radius: 10px;
+    padding: 11px 22px;
+    width: 100%;
+    gap: 11px;
+    font-family: "JetBrains Mono", monospace;
+    padding-bottom: 28px;
+}
+
+.plano.principal h3 {
+    color: #7A7676;
+    margin-bottom: -8px;
+}
+
+.plano.principal h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.plano.principal p {
+    font-size: 14px;
+    width: 100%;
+    color: #3C3C3C;
+    font-weight: 500;
+}
+
+.plano.principal strong {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.modal-plan.active #pagamento div {
+    align-items: start;
+}
+
+#pagamento {
+    top: -20%;
+    max-width: 600px;
+    align-items: center;
+    position: absolute;
+    text-align: start;
+    align-items: inherit;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.596);
+    border-radius: 15px;
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.199);
+}
+
+#pagamento > div:first-of-type {
+    align-items: start;
+}
+
+#pagamento div {
+    align-items: center;
+}
+
+#pagamento > p:nth-of-type(1) {
+    align-self: flex-end;
+}
+#pagamento > h2 {
+    align-self: flex-start;
+    font-size: 20px;
+}
+
+.plano.cupons {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 11px;
+}
+
+.plano.cupons img:last-of-type {
+    width: 20px;
+}
+
+.plano.cupons strong {
+    font-size: 12px;
+}
+
+.plano.cupons h3 {
+    font-size: 10px;
+}
+
+.plano.final {
+    gap: 10px;
+    justify-content: start;
+    align-items: center;
+    padding-bottom: 12px;
+}
+
+
+
+.plano.final section {
+   display: flex;
+   width: 100%; 
+   align-items: center;
+   justify-content: start;
+   position: relative;
+   gap: 20px;
+   height: 50px;
+}
+
+.bolinha {
+    display: flex;
+    position: absolute;
+    right: 11px;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
 
 @media (max-width: 890px) {
     header nav {

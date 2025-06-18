@@ -16,9 +16,9 @@ buttons.forEach(button => {
       body.classList.add('.active')
   
       // Abre o modal correspondente
-      modal.classList.toggle('active');
-      overlay.classList.toggle('active')
-      body.classList.toggle('active')
+      modal.classList.add('active');
+      overlay.classList.add('active')
+      body.classList.add('active')
 
       function toggleModal() {
         modal.classList.remove('active')
@@ -31,3 +31,26 @@ buttons.forEach(button => {
     })
     });
   });
+
+
+  // aqui vem a parte do carrossel, chatino mas entendivel se pa
+
+  
+    let indiceAtual = 0;
+
+function atualizarCarrossel() {
+  const carrossel = document.getElementById('feedbacks');
+  carrossel.style.transform = `translateX(-${indiceAtual * 100}vw)`;
+}
+
+function proximo() {
+  const total = document.getElementById('feedbacks').children.length;
+  indiceAtual = (indiceAtual + 1) % total;
+  atualizarCarrossel();
+}
+
+function anterior() {
+  const total = document.getElementById('feedbacks').children.length;
+  indiceAtual = (indiceAtual - 1 + total) % total;
+  atualizarCarrossel();
+}
