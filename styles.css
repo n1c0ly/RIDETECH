@@ -156,7 +156,7 @@ main button:first-of-type:hover {
 main button:first-of-type {
     background-color: transparent;
     border: 1px solid white;
-    color:  white;
+    color:  white;  
 }
 
 .benefits {
@@ -302,7 +302,6 @@ main button:first-of-type {
 
 .feedback {
   position: relative;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -370,7 +369,6 @@ main button:first-of-type {
 .seta.esquerda {
     right: inherit;
     left: 50px;
-
     & img {
         transform: rotate(180deg);
     }
